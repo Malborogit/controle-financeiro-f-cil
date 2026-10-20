@@ -1,7 +1,7 @@
 import { ShoppingCart, Car, Utensils, Home, TrendingUp, Target, Bell, PieChart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-function Frame({ children, className, label }: { children: React.ReactNode; className?: string; label: string }) {
+function Frame({ children, className, label }: { children: React.ReactNode; className?: string | undefined; label: string }) {
   return (
     <div
       role="img"
