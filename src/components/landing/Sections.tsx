@@ -71,7 +71,7 @@ export function Problem() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle eyebrow="Isso parece com você?" title="Controlar dinheiro não precisa ser difícil" />
         <div className="grid gap-5 md:grid-cols-3">
-          {PROBLEMS.map((p, i) => { const I = icons[i]; return (
+          {PROBLEMS.map((p, i) => { const I = icons[i]!; return (
             <Reveal key={p.title} delay={i * 100} className="rounded-2xl bg-card p-6 shadow-soft">
               <span className="grid size-12 place-items-center rounded-xl bg-danger-soft text-destructive"><I aria-hidden /></span>
               <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
@@ -90,7 +90,7 @@ export function Benefits() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle eyebrow="Benefícios" title="Tudo que você precisa, nada que complica" text="Feito para quem quer resultado, não para quem é especialista em finanças." />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {BENEFITS.map((b, i) => { const I = icons[i]; return (
+          {BENEFITS.map((b, i) => { const I = icons[i]!; return (
             <Reveal key={b.title} delay={(i % 3) * 100} className="rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-soft">
               <span className="grid size-12 place-items-center rounded-xl bg-success-soft text-primary"><I aria-hidden /></span>
               <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
